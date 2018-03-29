@@ -136,7 +136,6 @@
                   <span class="section-heading-lower" align="center">Contact Me</span>
                 </h2>
                 <p align = "center">
-<!--                  <a href="https://www.facebook.com/liwa.dladloti" class="fa fa-facebook" target="_blank"></a>-->
                     Cape Town<br> South Africa
                     <hr>
                   <p align="center">
@@ -168,10 +167,20 @@
   <!-- Script to highlight the active date in the hours list -->
   <script>
 //    $('.list-hours li').eq(new Date().getDay()).addClass('today');
-      var video = document.getElementById('video');
-      video.addEventListener('click', function(){
-          video.play();
-      }, false);
+//      var video = document.getElementById('video');
+//      video.addEventListener('click', function(){
+//          video.play();
+//      }, false);
+      var vid = document.getElementById("video");
+
+//        function getMuted() { 
+//            alert(vid.defaultMuted);
+//        } 
+
+        function setToMuted() { 
+            vid.defaultMuted = true;
+            vid.load()
+        }
   </script>
 
 </html>
